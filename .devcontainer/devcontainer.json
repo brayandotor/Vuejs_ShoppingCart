@@ -7,7 +7,7 @@
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/ionic-cli:2": {},
 		"ghcr.io/devcontainers-contrib/features/vue-cli:2": {}
-	}
+	},
 	"customizations": {
         // Configure properties specific to VS Code.
         "vscode": {
