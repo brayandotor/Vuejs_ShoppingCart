@@ -1,6 +1,6 @@
  <center>
- img src=""
- alt="itgam header"
+ <img src="https://github.com/brayandotor/Vuejs_ShoppingCart/blob/main/public/img/itgambanner.png?raw=true"
+ alt="itgam header"/:
  </center>
  
  # shopping cart app 🛒
