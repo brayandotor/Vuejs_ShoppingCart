@@ -9,4 +9,4 @@
 
  ## Autor 
 
- Javier Heredia Rodriguez 
+ Brayan Eduardo Dotor Sanchez 
