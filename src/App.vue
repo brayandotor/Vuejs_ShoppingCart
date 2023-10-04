@@ -12,13 +12,18 @@ const newItemPriority = ref (false);
 
 <template>
  <h1><i class="material-icons shopping-cart-icon">local_mall</i>{{header}}</h1>
- <input v-model.lazy="newItem" type="text" placeholder="Ingresar nuevo articulo">
- <!--check Boxes-->
- <label >
-    <input v-model ="newItemPriority" type="checkbox">
-    Alta prioridad 
-</label>
- {{newItemPriority ? "🔥" : "🧊"}}
+ <div class="add-item form">
+    <!--Input de nuevo articulo-->
+    <input v-model.lazy="newItem" type="text" placeholder="Ingresar nuevo articulo">
+    <!--check Boxes-->
+    <label >
+       <input v-model ="newItemPriority" type="checkbox">
+       Alta prioridad 
+   </label>
+    {{newItemPriority ? "🔥" : "🧊"}}
+    <!--Button-->
+    <button v-on:click="items.push({id: items.lenght +1, label: newItem})" class="btn btn-primary">Salvar articulo</button>
+ </div>
  <ul>
     <li v-for="{ id, label} in items" v-bind:key="id">
     {{label}}
